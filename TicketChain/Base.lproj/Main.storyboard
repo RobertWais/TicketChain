@@ -183,7 +183,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="KNM-MF-yAf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" id="E7J-ki-60w"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="list" landscapeImage="list" selectedImage="list" id="E7J-ki-60w"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2OH-Jw-KFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,7 +208,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="c1u-Oh-CnH"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Requests" id="VLf-bH-knX"/>
+                    <tabBarItem key="tabBarItem" title="Requests" image="idea" landscapeImage="idea" selectedImage="idea" id="VLf-bH-knX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rmn-1p-VQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,7 +233,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="phn-7h-9Gp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Completed" id="Olr-L4-aIy"/>
+                    <tabBarItem key="tabBarItem" title="Completed" image="ok" landscapeImage="ok" selectedImage="ok" id="Olr-L4-aIy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1N2-bA-lIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,7 +243,7 @@
         <scene sceneID="Yi4-sl-3o9">
             <objects>
                 <tabBarController id="Fpn-x8-xsI" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vom-An-Y0j">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="vom-An-Y0j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -259,4 +259,9 @@
             <point key="canvasLocation" x="908" y="-682"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="idea" width="30" height="30"/>
+        <image name="list" width="30" height="30"/>
+        <image name="ok" width="30" height="30"/>
+    </resources>
 </document>
