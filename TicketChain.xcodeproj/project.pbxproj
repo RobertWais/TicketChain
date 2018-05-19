@@ -12,6 +12,11 @@
 		2E9BB9D120AD42F50040CB64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9BB9CF20AD42F50040CB64 /* Main.storyboard */; };
 		2E9BB9D320AD42F50040CB64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E9BB9D220AD42F50040CB64 /* Assets.xcassets */; };
 		2E9BB9D620AD42F50040CB64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9BB9D420AD42F50040CB64 /* LaunchScreen.storyboard */; };
+		2E9BB9DF20B088130040CB64 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB9DE20B088130040CB64 /* FeedVC.swift */; };
+		2E9BB9E120B0883A0040CB64 /* CompletedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB9E020B0883A0040CB64 /* CompletedVC.swift */; };
+		2E9BB9E320B0884D0040CB64 /* RequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB9E220B0884D0040CB64 /* RequestVC.swift */; };
+		2E9BB9E520B088980040CB64 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB9E420B088980040CB64 /* SignUpVC.swift */; };
+		2E9BB9EA20B089AB0040CB64 /* CreateTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB9E920B089AB0040CB64 /* CreateTeamVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		2E9BB9D220AD42F50040CB64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E9BB9D520AD42F50040CB64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E9BB9D720AD42F50040CB64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E9BB9DE20B088130040CB64 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		2E9BB9E020B0883A0040CB64 /* CompletedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedVC.swift; sourceTree = "<group>"; };
+		2E9BB9E220B0884D0040CB64 /* RequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestVC.swift; sourceTree = "<group>"; };
+		2E9BB9E420B088980040CB64 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		2E9BB9E920B089AB0040CB64 /* CreateTeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTeamVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		2E9BB9CA20AD42F50040CB64 /* TicketChain */ = {
 			isa = PBXGroup;
 			children = (
+				2E9BB9E820B089910040CB64 /* ViewControllers-CreateTeam */,
+				2E9BB9E720B088C60040CB64 /* ViewControllers-NotSignedIn */,
+				2E9BB9E620B088B80040CB64 /* ViewControllers-SignUp */,
+				2E9BB9DD20B087D80040CB64 /* ViewControllers-SignedIn */,
 				2E9BB9CB20AD42F50040CB64 /* AppDelegate.swift */,
-				2E9BB9CD20AD42F50040CB64 /* LoginVC.swift */,
 				2E9BB9CF20AD42F50040CB64 /* Main.storyboard */,
 				2E9BB9D220AD42F50040CB64 /* Assets.xcassets */,
 				2E9BB9D420AD42F50040CB64 /* LaunchScreen.storyboard */,
 				2E9BB9D720AD42F50040CB64 /* Info.plist */,
 			);
 			path = TicketChain;
+			sourceTree = "<group>";
+		};
+		2E9BB9DD20B087D80040CB64 /* ViewControllers-SignedIn */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB9DE20B088130040CB64 /* FeedVC.swift */,
+				2E9BB9E020B0883A0040CB64 /* CompletedVC.swift */,
+				2E9BB9E220B0884D0040CB64 /* RequestVC.swift */,
+			);
+			path = "ViewControllers-SignedIn";
+			sourceTree = "<group>";
+		};
+		2E9BB9E620B088B80040CB64 /* ViewControllers-SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB9E420B088980040CB64 /* SignUpVC.swift */,
+			);
+			path = "ViewControllers-SignUp";
+			sourceTree = "<group>";
+		};
+		2E9BB9E720B088C60040CB64 /* ViewControllers-NotSignedIn */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB9CD20AD42F50040CB64 /* LoginVC.swift */,
+			);
+			path = "ViewControllers-NotSignedIn";
+			sourceTree = "<group>";
+		};
+		2E9BB9E820B089910040CB64 /* ViewControllers-CreateTeam */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB9E920B089AB0040CB64 /* CreateTeamVC.swift */,
+			);
+			path = "ViewControllers-CreateTeam";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E9BB9E320B0884D0040CB64 /* RequestVC.swift in Sources */,
+				2E9BB9DF20B088130040CB64 /* FeedVC.swift in Sources */,
 				2E9BB9CE20AD42F50040CB64 /* LoginVC.swift in Sources */,
+				2E9BB9E120B0883A0040CB64 /* CompletedVC.swift in Sources */,
+				2E9BB9EA20B089AB0040CB64 /* CreateTeamVC.swift in Sources */,
+				2E9BB9E520B088980040CB64 /* SignUpVC.swift in Sources */,
 				2E9BB9CC20AD42F50040CB64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
