@@ -17,6 +17,8 @@
 		2E9BB9E320B0884D0040CB64 /* RequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB9E220B0884D0040CB64 /* RequestVC.swift */; };
 		2E9BB9E520B088980040CB64 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB9E420B088980040CB64 /* SignUpVC.swift */; };
 		2E9BB9EA20B089AB0040CB64 /* CreateTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB9E920B089AB0040CB64 /* CreateTeamVC.swift */; };
+		2EA195F820B0B24500D32DA8 /* UnclaimedCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA195F720B0B24500D32DA8 /* UnclaimedCVC.swift */; };
+		2EA195FD20B0BE7E00D32DA8 /* InProgressCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA195FC20B0BE7E00D32DA8 /* InProgressCVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		2E9BB9E220B0884D0040CB64 /* RequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestVC.swift; sourceTree = "<group>"; };
 		2E9BB9E420B088980040CB64 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		2E9BB9E920B089AB0040CB64 /* CreateTeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTeamVC.swift; sourceTree = "<group>"; };
+		2EA195F720B0B24500D32DA8 /* UnclaimedCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnclaimedCVC.swift; sourceTree = "<group>"; };
+		2EA195FC20B0BE7E00D32DA8 /* InProgressCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressCVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		2E9BB9CA20AD42F50040CB64 /* TicketChain */ = {
 			isa = PBXGroup;
 			children = (
+				2EA195F920B0B4BC00D32DA8 /* CollectionViewCells */,
 				2E9BB9E820B089910040CB64 /* ViewControllers-CreateTeam */,
 				2E9BB9E720B088C60040CB64 /* ViewControllers-NotSignedIn */,
 				2E9BB9E620B088B80040CB64 /* ViewControllers-SignUp */,
@@ -109,6 +114,15 @@
 				2E9BB9E920B089AB0040CB64 /* CreateTeamVC.swift */,
 			);
 			path = "ViewControllers-CreateTeam";
+			sourceTree = "<group>";
+		};
+		2EA195F920B0B4BC00D32DA8 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				2EA195F720B0B24500D32DA8 /* UnclaimedCVC.swift */,
+				2EA195FC20B0BE7E00D32DA8 /* InProgressCVC.swift */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +200,8 @@
 				2E9BB9E320B0884D0040CB64 /* RequestVC.swift in Sources */,
 				2E9BB9DF20B088130040CB64 /* FeedVC.swift in Sources */,
 				2E9BB9CE20AD42F50040CB64 /* LoginVC.swift in Sources */,
+				2EA195F820B0B24500D32DA8 /* UnclaimedCVC.swift in Sources */,
+				2EA195FD20B0BE7E00D32DA8 /* InProgressCVC.swift in Sources */,
 				2E9BB9E120B0883A0040CB64 /* CompletedVC.swift in Sources */,
 				2E9BB9EA20B089AB0040CB64 /* CreateTeamVC.swift in Sources */,
 				2E9BB9E520B088980040CB64 /* SignUpVC.swift in Sources */,
