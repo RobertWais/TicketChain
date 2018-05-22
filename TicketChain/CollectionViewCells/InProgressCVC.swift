@@ -10,9 +10,10 @@ import UIKit
 
 class InProgressCVC: UICollectionViewCell {
     
+    @IBOutlet weak var lbl: UILabel!
     
-    @IBOutlet weak var name: UILabel!
     func configureCell(){
-        self.backgroundColor = UIColor.blue
+        lbl.text = "Change"
+        self.layer.cornerRadius = self.layer.bounds.height/2 
     }
 }

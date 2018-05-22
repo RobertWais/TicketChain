@@ -12,7 +12,6 @@ class UnclaimedCVC: UICollectionViewCell {
   
     
     func configureCell(){
-        
-        self.backgroundColor = UIColor.red
+        self.layer.cornerRadius = self.layer.bounds.height/2 
     }
 }

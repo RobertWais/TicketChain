@@ -14,13 +14,14 @@ class FeedVC: UIViewController {
     @IBOutlet var collectionViewProgress: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.dataSource = self
-        collectionView.delegate = self
         collectionViewProgress.dataSource = self
         collectionViewProgress.delegate = self
-        collectionView.register(UnclaimedCVC.self, forCellWithReuseIdentifier: "UnclaimedCVC")
         
-        collectionViewProgress.register(InProgressCVC.self, forCellWithReuseIdentifier: "InProgressCVC")
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        
+        //note
+        //collectionViewProgress.register(InProgressCVC.self, forCellWithReuseIdentifier: "InProgressCVC")
         // Do any additional setup after loading the view.
     }
     
@@ -28,23 +29,26 @@ class FeedVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
 }
 
-extension FeedVC:  UICollectionViewDelegate, UICollectionViewDataSource{
+extension FeedVC:  UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if (collectionView == self.collectionView){
+        
+        if(collectionView.tag==0){
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UnclaimedCVC", for: indexPath) as? UnclaimedCVC {
                 cell.configureCell()
                 return cell
             }else{
                 return UICollectionViewCell()
             }
-        }else if(collectionView == self.collectionViewProgress){
+        }else if(collectionView.tag==1){
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InProgressCVC", for: indexPath) as? InProgressCVC {
                 cell.configureCell()
                 return cell
@@ -61,3 +65,5 @@ extension FeedVC:  UICollectionViewDelegate, UICollectionViewDataSource{
         
     }
 }
+
+

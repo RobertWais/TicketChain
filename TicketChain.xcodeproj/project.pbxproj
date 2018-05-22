@@ -19,6 +19,7 @@
 		2E9BB9EA20B089AB0040CB64 /* CreateTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB9E920B089AB0040CB64 /* CreateTeamVC.swift */; };
 		2EA195F820B0B24500D32DA8 /* UnclaimedCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA195F720B0B24500D32DA8 /* UnclaimedCVC.swift */; };
 		2EA195FD20B0BE7E00D32DA8 /* InProgressCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA195FC20B0BE7E00D32DA8 /* InProgressCVC.swift */; };
+		2EA195FF20B3C1E600D32DA8 /* PleaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA195FE20B3C1E600D32DA8 /* PleaseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		2E9BB9E920B089AB0040CB64 /* CreateTeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTeamVC.swift; sourceTree = "<group>"; };
 		2EA195F720B0B24500D32DA8 /* UnclaimedCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnclaimedCVC.swift; sourceTree = "<group>"; };
 		2EA195FC20B0BE7E00D32DA8 /* InProgressCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressCVC.swift; sourceTree = "<group>"; };
+		2EA195FE20B3C1E600D32DA8 /* PleaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			children = (
 				2EA195F720B0B24500D32DA8 /* UnclaimedCVC.swift */,
 				2EA195FC20B0BE7E00D32DA8 /* InProgressCVC.swift */,
+				2EA195FE20B3C1E600D32DA8 /* PleaseCell.swift */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				2E9BB9CE20AD42F50040CB64 /* LoginVC.swift in Sources */,
 				2EA195F820B0B24500D32DA8 /* UnclaimedCVC.swift in Sources */,
 				2EA195FD20B0BE7E00D32DA8 /* InProgressCVC.swift in Sources */,
+				2EA195FF20B3C1E600D32DA8 /* PleaseCell.swift in Sources */,
 				2E9BB9E120B0883A0040CB64 /* CompletedVC.swift in Sources */,
 				2E9BB9EA20B089AB0040CB64 /* CreateTeamVC.swift in Sources */,
 				2E9BB9E520B088980040CB64 /* SignUpVC.swift in Sources */,
