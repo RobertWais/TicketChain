@@ -15,6 +15,10 @@ class SignUpVC: UIViewController {
         super.viewDidLoad()
         viewPop.layer.cornerRadius = 20
         
+        let blurEffect = UIBlurEffect(style: .regular)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.view.frame
+        self.view.insertSubview(blurEffectView, at: 0)
         
         // Do any additional setup after loading the view.
     }
