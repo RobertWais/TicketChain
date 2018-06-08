@@ -10,9 +10,12 @@ import UIKit
 
 class SignUpVC: UIViewController {
 
+    @IBOutlet var viewPop: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewPop.layer.cornerRadius = 20
+        
+        
         // Do any additional setup after loading the view.
     }
 
