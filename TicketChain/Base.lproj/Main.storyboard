@@ -73,7 +73,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="bOd-PU-rjf" kind="presentation" modalPresentationStyle="overCurrentContext" id="EhF-XC-mZA"/>
+                                            <segue destination="bOd-PU-rjf" kind="presentation" identifier="showAction" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="EhF-XC-mZA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFi-jp-5XU">

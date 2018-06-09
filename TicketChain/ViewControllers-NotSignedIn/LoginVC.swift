@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class LoginVC: UIViewController, UIViewControllerTransitioningDelegate {
 
     @IBOutlet var loginBtn: UIButton!
     @IBOutlet var signUpBtn: UIButton!
@@ -25,6 +25,17 @@ class LoginVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    let customAnimation = AnimationController()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showAction" {
+            let toViewController = segue.destination as UIViewController
+            toViewController.transitioningDelegate = self
+        }
+    }
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return customAnimation
+    }
+    
 
     func createButtonBorders(){
         addBorder(btn: loginBtn)

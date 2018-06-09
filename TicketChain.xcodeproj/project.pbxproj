@@ -20,6 +20,7 @@
 		2EA195F820B0B24500D32DA8 /* UnclaimedCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA195F720B0B24500D32DA8 /* UnclaimedCVC.swift */; };
 		2EA195FD20B0BE7E00D32DA8 /* InProgressCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA195FC20B0BE7E00D32DA8 /* InProgressCVC.swift */; };
 		2EA195FF20B3C1E600D32DA8 /* PleaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA195FE20B3C1E600D32DA8 /* PleaseCell.swift */; };
+		2EE727FF20CB6FC4004EA109 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE727FE20CB6FC4004EA109 /* AnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		2EA195F720B0B24500D32DA8 /* UnclaimedCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnclaimedCVC.swift; sourceTree = "<group>"; };
 		2EA195FC20B0BE7E00D32DA8 /* InProgressCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressCVC.swift; sourceTree = "<group>"; };
 		2EA195FE20B3C1E600D32DA8 /* PleaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseCell.swift; sourceTree = "<group>"; };
+		2EE727FE20CB6FC4004EA109 /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				2E9BB9D220AD42F50040CB64 /* Assets.xcassets */,
 				2E9BB9D420AD42F50040CB64 /* LaunchScreen.storyboard */,
 				2E9BB9D720AD42F50040CB64 /* Info.plist */,
+				2EE727FE20CB6FC4004EA109 /* AnimationController.swift */,
 			);
 			path = TicketChain;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E9BB9E320B0884D0040CB64 /* RequestVC.swift in Sources */,
+				2EE727FF20CB6FC4004EA109 /* AnimationController.swift in Sources */,
 				2E9BB9DF20B088130040CB64 /* FeedVC.swift in Sources */,
 				2E9BB9CE20AD42F50040CB64 /* LoginVC.swift in Sources */,
 				2EA195F820B0B24500D32DA8 /* UnclaimedCVC.swift in Sources */,
