@@ -28,8 +28,10 @@ class LoginVC: UIViewController, UIViewControllerTransitioningDelegate {
     let customAnimation = AnimationController()
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showAction" {
+            
             let toViewController = segue.destination as UIViewController
             toViewController.transitioningDelegate = self
+            
         }
     }
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {

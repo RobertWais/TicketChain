@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E5D0A2020D0D3EB00921684 /* MinimizeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5D0A1F20D0D3EB00921684 /* MinimizeAnimation.swift */; };
 		2E9BB9CC20AD42F50040CB64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB9CB20AD42F50040CB64 /* AppDelegate.swift */; };
 		2E9BB9CE20AD42F50040CB64 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BB9CD20AD42F50040CB64 /* LoginVC.swift */; };
 		2E9BB9D120AD42F50040CB64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9BB9CF20AD42F50040CB64 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E5D0A1F20D0D3EB00921684 /* MinimizeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimizeAnimation.swift; sourceTree = "<group>"; };
 		2E9BB9C820AD42F50040CB64 /* TicketChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E9BB9CB20AD42F50040CB64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E9BB9CD20AD42F50040CB64 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		2E9BB9CA20AD42F50040CB64 /* TicketChain */ = {
 			isa = PBXGroup;
 			children = (
+				2EE7280020CBA7B9004EA109 /* Animations */,
 				2EA195F920B0B4BC00D32DA8 /* CollectionViewCells */,
 				2E9BB9E820B089910040CB64 /* ViewControllers-CreateTeam */,
 				2E9BB9E720B088C60040CB64 /* ViewControllers-NotSignedIn */,
@@ -82,7 +85,6 @@
 				2E9BB9D220AD42F50040CB64 /* Assets.xcassets */,
 				2E9BB9D420AD42F50040CB64 /* LaunchScreen.storyboard */,
 				2E9BB9D720AD42F50040CB64 /* Info.plist */,
-				2EE727FE20CB6FC4004EA109 /* AnimationController.swift */,
 			);
 			path = TicketChain;
 			sourceTree = "<group>";
@@ -129,6 +131,15 @@
 				2EA195FE20B3C1E600D32DA8 /* PleaseCell.swift */,
 			);
 			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		2EE7280020CBA7B9004EA109 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				2EE727FE20CB6FC4004EA109 /* AnimationController.swift */,
+				2E5D0A1F20D0D3EB00921684 /* MinimizeAnimation.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 				2EA195FD20B0BE7E00D32DA8 /* InProgressCVC.swift in Sources */,
 				2EA195FF20B3C1E600D32DA8 /* PleaseCell.swift in Sources */,
 				2E9BB9E120B0883A0040CB64 /* CompletedVC.swift in Sources */,
+				2E5D0A2020D0D3EB00921684 /* MinimizeAnimation.swift in Sources */,
 				2E9BB9EA20B089AB0040CB64 /* CreateTeamVC.swift in Sources */,
 				2E9BB9E520B088980040CB64 /* SignUpVC.swift in Sources */,
 				2E9BB9CC20AD42F50040CB64 /* AppDelegate.swift in Sources */,

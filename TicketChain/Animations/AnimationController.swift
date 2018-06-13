@@ -10,7 +10,8 @@ import UIKit
 
 class AnimationController: NSObject, UIViewControllerAnimatedTransitioning {
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 5
+        return 1.0
+        
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -20,11 +21,12 @@ class AnimationController: NSObject, UIViewControllerAnimatedTransitioning {
         let containerView = transitionContext.containerView
         let bounds = UIScreen.main.bounds
         //finalframeForVC,0,bounds.size.height
-        toViewController.view.frame = finalFrameForVC.offsetBy(dx: 0,dy: bounds.size.height)
+        toViewController.view.frame = finalFrameForVC.offsetBy(dx: -bounds.size.width,dy: 0)
         containerView.addSubview(toViewController.view)
         
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.0, options: .curveLinear, animations: {
-            fromViewController.view.alpha = 0.5
+        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 2.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.0, options: .curveLinear, animations: {
+            
+            //fromViewController.view.alpha = 0.5
             toViewController.view.frame = finalFrameForVC
         }, completion: {
             finished in
